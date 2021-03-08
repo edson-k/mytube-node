@@ -1,0 +1,11 @@
+{
+  "youtube": {
+    "api-key": "YOUTUBE_API_KEY"
+  },
+  "redis": {
+    "host": "REDIS_HOST",
+    "port": "REDIS_PORT",
+    "db": "REDIS_DB",
+    "password": "REDIS_PASSWORD"
+  }
+}

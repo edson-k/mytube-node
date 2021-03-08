@@ -1,0 +1,70 @@
+html
+    head
+        title= title
+        link(href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+        style
+            include ../public/style.css
+    body
+        div.flex-center.position-ref.full-height
+
+            div.content
+
+                div.title.m-b-md
+                    | myTUBE
+                
+                form(action="./" method="POST")
+                    input(type="hidden" name="_token" value="taXil9TJ5PYHJgAeSPvZ1aNg2VA2p4cZYV6WRN3g")
+
+                    label(for='basic-url')
+                        | Defina o tempo gasto para cada dia
+                    div.input-group
+                        span.input-group-addon Dia 01
+                        <input type="text" name="time_01" class="form-control" placeholder="15">
+                        span.input-group-addon min.
+
+                    div.input-group
+                        span.input-group-addon Dia 02
+                        input(type="text" name="time_02" class="form-control" placeholder="120")
+                        span.input-group-addon min.
+
+                    div.input-group
+                        span.input-group-addon Dia 03
+                        input(type="text" name="time_03" class="form-control" placeholder="30")
+                        span.input-group-addon min.
+                    
+                    div.input-group
+                        span.input-group-addon Dia 04
+                        input(type="text" name="time_04" class="form-control" placeholder="150")
+                        span.input-group-addon min.
+                    
+                    div.input-group
+                        span.input-group-addon Dia 05
+                        input(type="text" name="time_05" class="form-control" placeholder="20")
+                        span.input-group-addon min.
+                    
+                    div.input-group
+                        span.input-group-addon Dia 06
+                        input(type="text" name="time_06" class="form-control" placeholder="40")
+                        span.input-group-addon min.
+                    
+                    div.input-group
+                        span.input-group-addon Dia 07
+                        input(type="text" name="time_07" class="form-control" placeholder="90")
+                        span.input-group-addon min.
+
+                    <br>
+                    <br>
+
+                    label Defina sua busca e filtro
+                    div.input-group
+                        span.input-group-addon Ignorar palavras menores que
+                        input(type="text" name="q_start" class="form-control" placeholder="4")
+                        span.input-group-addon nas palavras mais utilizadas
+
+                    <br>
+
+                    div.input-group
+                        input(type="text" name="q" class="form-control" placeholder="Pesquisar" value="Android")
+                        span.input-group-btn
+                            button(class="btn btn-primary" type="submit") buscar

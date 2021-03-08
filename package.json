@@ -1,0 +1,28 @@
+{
+  "name": "mytube-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Edson kuzniewski <contato@edsonk.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.4",
+    "debug": "^4.3.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "redis": "^3.0.2",
+    "util": "^0.12.3",
+    "youtube-v3-api": "^1.1.1"
+  },
+  "devDependencies": {
+    "@knuckleswtf/scribe-express": "^1.2.0"
+  }
+}

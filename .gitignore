@@ -1,0 +1,7 @@
+config/development.json
+config/production.json
+controller/*
+node_modules/*
+.prettierignore
+.scribe.config.js
+views/result.pug
